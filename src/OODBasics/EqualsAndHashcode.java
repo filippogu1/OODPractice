@@ -18,8 +18,7 @@ public class EqualsAndHashcode {
             if (this == other) return true;
             if (!(other instanceof Poker)) return false;
             Poker otherP = (Poker)other;
-            if (this.color.equals(otherP.color) && this.number.equals(otherP.number)) return true;
-            else return false;
+            return this.color.equals(otherP.color) && this.number.equals(otherP.number);
         }
 
         @Override
